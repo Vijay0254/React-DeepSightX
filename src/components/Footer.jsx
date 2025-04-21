@@ -18,7 +18,7 @@ const Footer = () => {
                 <ul className="mt-2 space-y-2">
                     <li><Link to={'/'} className="hover:text-primary">Home</Link></li>
                     <li><Link to={"/diseases"} className="hover:text-primary">Diseases</Link></li>
-                    <li><Link to={"/hospitals"} className="hover:text-primary">Hospitals</Link></li>
+                    <li><Link to={"/hospitals/1"} className="hover:text-primary">Hospitals</Link></li>
                     <li><Link to={"/about"} className="hover:text-primary">About</Link></li>
                 </ul>
             </div>

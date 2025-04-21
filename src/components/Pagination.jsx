@@ -20,7 +20,7 @@ const Pagination = ({ totalPosts, postsPerPage, pageNumber }) => {
                 <button onClick={() =>handlePageChange(element)} key={element} className={`bg-[#F2F2F2] text-[#000000] cursor-pointer font-semibold px-4 py-2 rounded-md hover:bg-[#000000] hover:text-[#FFFFFF] ${element == pageNumber ? "bg-black text-white" : "bg-white text-black"}`}>{element}</button>
             ))}
         </div>
-  )
+    )
 }
 
 export default Pagination
