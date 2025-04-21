@@ -26,7 +26,7 @@ const Navbar = () => {
         <Menu onClick={() =>setvisible(!visible)} className='lg:hidden text-gray-600 size-7 cursor-pointer' />
 
         {/* Sidebar Menu for Mobile */}
-        <nav className={`fixed z-50 lg:hidden sm:pl-10 sm:pr-5 transition-transform duration-300 ease-in-out left-0 top-0 bottom-0 w-[55%] sm:w-[50] bg-white shadow-xl shadow-slate-700 ${visible ? "translate-x-0" : "-translate-x-full"}`}>
+        <nav className={`fixed z-50 lg:hidden sm:pl-10 sm:pr-5 transition-transform duration-300 ease-in-out left-0 top-0 bottom-0 w-[55%] sm:w-[50%] bg-white shadow-xl shadow-slate-700 ${visible ? "translate-x-0" : "-translate-x-full"}`}>
             <X onClick={() =>setvisible(!visible)} className='absolute right-4 cursor-pointer md:text-3xl top-10 text-gray-600 text-2xl ' />
             <div className='flex text-gray-600 flex-col items-end text-end gap-y-8 mt-24 md:pl-44 md:text-xl md:pr-16 px-10'>
                 <NavLink onClick={() =>setvisible(!visible)} to='/' className={(({isActive}) => isActive ? "border-b-2 w-32 py-2 text-primary uppercase font-medium sm:text-lg" : `py-1 uppercase font-medium sm:text-lg`)}>Home</NavLink>
