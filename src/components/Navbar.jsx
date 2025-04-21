@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className='lg:flex hidden items-center gap-x-14 text-gray-600 font-medium rounded-2xl uppercase px-7 py-2.5'>
             <NavLink to="/" className={(({isActive}) => isActive ? "border-b-2 py-1 text-primary" : `py-1`)}>Home</NavLink>
             <NavLink to="/diseases" className={(({isActive}) => isActive ? "border-b-2 py-1 text-primary" : `py-1`)}>Diseases</NavLink>
-            <NavLink to="/hospitals" className={(({isActive}) => isActive ? "border-b-2 py-1 text-primary" : `py-1`)}>Hospitals</NavLink>
+            <NavLink to="/hospitals/1" className={(({isActive}) => isActive ? "border-b-2 py-1 text-primary" : `py-1`)}>Hospitals</NavLink>
             <NavLink to="/about" className={(({isActive}) => isActive ? "border-b-2 py-1 text-primary" : `py-1`)}>About</NavLink>
         </div>
 
@@ -31,7 +31,7 @@ const Navbar = () => {
             <div className='flex text-gray-600 flex-col items-end text-end gap-y-8 mt-24 md:pl-44 md:text-xl md:pr-16 px-10'>
                 <NavLink onClick={() =>setvisible(!visible)} to='/' className={(({isActive}) => isActive ? "border-b-2 w-32 py-2 text-primary uppercase font-medium sm:text-lg" : `py-1 uppercase font-medium sm:text-lg`)}>Home</NavLink>
                 <NavLink onClick={() =>setvisible(!visible)} to='/diseases' className={(({isActive}) => isActive ? "border-b-2 w-32 py-2 text-primary uppercase font-medium sm:text-lg" : `py-1 uppercase font-medium sm:text-lg`)}>Diseases</NavLink>
-                <NavLink onClick={() =>setvisible(!visible)} to='/hospitals' className={(({isActive}) => isActive ? "border-b-2 w-32 py-2 text-primary uppercase font-medium sm:text-lg" : `py-1 uppercase font-medium sm:text-lg`)}>Hospitals</NavLink>
+                <NavLink onClick={() =>setvisible(!visible)} to='/hospitals/1' className={(({isActive}) => isActive ? "border-b-2 w-32 py-2 text-primary uppercase font-medium sm:text-lg" : `py-1 uppercase font-medium sm:text-lg`)}>Hospitals</NavLink>
                 <NavLink onClick={() =>setvisible(!visible)} to='/about' className={(({isActive}) => isActive ? "border-b-2 w-32 py-2 text-primary uppercase font-medium sm:text-lg" : `py-1 uppercase font-medium sm:text-lg`)}>About</NavLink>
             </div>
         </nav>

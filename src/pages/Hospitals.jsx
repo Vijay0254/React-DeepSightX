@@ -3,14 +3,16 @@ import { hospitalData } from '../utils/data'
 import EachHospital from '../components/EachHospital'
 import { useState } from 'react'
 import Pagination from '../components/Pagination'
+import { useParams } from 'react-router-dom'
 
 const Hospitals = () => {
+  
+  const { pageNumber } = useParams()
 
-  const [currentPage, setCurrentPage] = useState(1)
   const postsPerPage = 4
-
-  const lastPostIndex = currentPage * postsPerPage
+  const lastPostIndex = pageNumber * postsPerPage
   const firstPostIndex = lastPostIndex - postsPerPage
+
 
   return (
     <section className='sm:mt-9 sm:ml-10 mt-7 mx-2'>
@@ -24,7 +26,7 @@ const Hospitals = () => {
           <EachHospital key={element.hospital_id} element={element} />
         ))}
 
-        <Pagination totalPosts={hospitalData.length} postsPerPage={postsPerPage} setCurrentPage={setCurrentPage} />
+        <Pagination totalPosts={hospitalData.length} postsPerPage={postsPerPage} pageNumber={pageNumber} />
       </div>
     </section>
   )
