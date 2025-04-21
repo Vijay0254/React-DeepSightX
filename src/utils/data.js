@@ -95,7 +95,7 @@ export const hospitalData = [
         hospital_id: 1,
         hospital_logo: logo1,
         hospital_name: "Sankara Nethralaya Hospital",
-        hospital_phoneno: "+91-4442271500,",
+        hospital_phoneno: "+91-4442271500",
         hospital_link: "https://www.sankaranethralaya.org/",
         doctors: [
             {
@@ -233,7 +233,7 @@ export const hospitalData = [
         hospital_id: 3,
         hospital_logo: logo3,
         hospital_name: "Aravind Eye Hospital",
-        hospital_phoneno: "+91-4524356100.",
+        hospital_phoneno: "+91-4524356100",
         hospital_link: "https://aravind.org/",
         doctors: [
             {
