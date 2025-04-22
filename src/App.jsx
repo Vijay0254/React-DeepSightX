@@ -30,7 +30,6 @@ const App = () => {
         <Route path='*' element={<Error_404 />} />
       </Routes>
       <Footer />
-      <h1 className='fixed right-10 bottom-5'>{import.meta.env.VITE_TL}</h1>
     </main>
   )
 }
