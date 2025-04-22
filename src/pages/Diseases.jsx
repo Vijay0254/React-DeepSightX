@@ -81,7 +81,7 @@ const Diseases = () => {
     setLeftEye(null)
     setRightEye(null)
     setSingleEye(null)
-  }, [image])
+  }, [image, eyeCount])
 
   return (
     <section className='sm:mt-9 sm:ml-10 mt-7 mx-2'>
@@ -129,7 +129,7 @@ const Diseases = () => {
             }
 
           <div className='flex items-center justify-center mt-10'>
-            <PDFDownloadLink document={<Pdf leftEye={leftEye} rightEye={rightEye} image={image} eyeCount={eyeCount} singleEye={singleEye} />} fileName='EyeReport.pdf'>
+            <PDFDownloadLink document={<Pdf leftEye={leftEye} rightEye={rightEye} image={image} singleEye={singleEye} />} fileName='EyeReport.pdf'>
               <button className='flex hover:bg-black/70 duration-200 cursor-pointer items-center justify-center gap-x-2 text-white bg-black py-2 px-5 rounded font-medium'>Download<Download className='size-5' /></button>
             </PDFDownloadLink>
           </div>

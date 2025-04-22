@@ -4,7 +4,7 @@ import React from 'react'
 import AccuracyBar from './AccuracyBar';
 import { diseaseDescription } from './data';
 
-const Pdf = ({ leftEye, rightEye, image, eyeCount, singleEye }) => {
+const Pdf = ({ leftEye, rightEye, image, singleEye }) => {
     const timestamp = new Date().toLocaleString()
 
     return (
