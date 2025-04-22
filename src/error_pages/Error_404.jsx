@@ -3,7 +3,7 @@ import React from 'react'
 
 const Error_404 = () => {
   return (
-    <section className='flex gap-y-1 md:gap-y-4 mt-20 sm:mt-12 justify-center items-center flex-col'>
+    <section className='flex gap-y-1 md:gap-y-4 mt-12 justify-center items-center flex-col'>
         <div className='flex justify-center gap-3 flex-col items-center xl:p-20 p-4 md:p-20 rounded'>
             <div className='flex flex-row-reverse font-playfair gap-4 md:gap-6 items-center text-5xl sm:text-8xl font-bold text-slate-600'>
                 <h1 className=''>Error 404</h1>
