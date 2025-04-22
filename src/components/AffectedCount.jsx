@@ -20,7 +20,7 @@ const AffectedCount = () => {
             {diseaseCount.map((element) =>(
                 <div key={element.id} className='flex flex-col lg:gap-y-1 items-center'>
                     <div className='flex text-primary text-[40px] sm:text-5xl lg:text-6xl font-bold items-center'>
-                        {inView && <CountUp start={0} end={element.count} delay={0} duration={2} />}
+                        {inView && <CountUp start={0} end={element.count} delay={0} duration={5} />}
                         <p>{element.system}</p>
                         <span className='pl-0.5'>+</span>
                     </div>
