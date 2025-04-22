@@ -8,7 +8,7 @@ const AffectedCount = () => {
     const { ref, inView } = useInView({ triggerOnce: false })
 
   return (
-    <section ref={ref} className='my-10 mt-14 sm:mt-20'>
+    <section ref={ref} className='my-10 mt-16 sm:mt-20'>
         {/* Title */}
         <div className='space-y-2'>
             <h1 className='text-4xl font-bold font-serif'>India's Eye & Neurological Disease Burden</h1>
