@@ -23,10 +23,11 @@ const Diseases = () => {
       return toast.error("Please upload an image")
     }
     const formData = new FormData()
-    formData.append('image', image)
+    formData.append('file', image)
     setLoading(true)
     try{
-      const response = await axios.post(`${import.meta.env.VITE_API_URL}/predict`, formData)
+      // const response = await axios.post(`${import.meta.env.VITE_API_URL}/predict`, formData)
+      const response = await axios.post(`${import.meta.env.VITE_ROBOFLOW_API_URL}?api_key=${import.meta.env.VITE_ROBOFLOW_API_KEY}`, formData)
       console.log(response.data)
 
       //Displaying error message if no predictions are found
