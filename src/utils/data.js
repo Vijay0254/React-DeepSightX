@@ -785,3 +785,42 @@ export const hospitalData = [
         ]
     },
 ]
+
+export const techStack = [
+    {
+        id: 1,
+        name: "React.js"
+    },
+    {
+        id: 2,
+        name: "Tailwind CSS"
+    },
+    {
+        id: 3,
+        name: "CNN"
+    },
+    {
+        id: 4,
+        name: "Python"
+    },
+    {
+        id: 5,
+        name: "Tensorflow"
+    },
+    {
+        id: 6,
+        name: "Roboflow"
+    },
+    {
+        id: 7,
+        name: "OpenCV"
+    }, 
+    {
+        id: 8,
+        name: "Flask"
+    },
+    {
+        id: 9,
+        name: "Raspberry Pi"
+    }
+]

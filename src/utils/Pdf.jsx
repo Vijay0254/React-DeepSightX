@@ -33,7 +33,7 @@ const Pdf = ({ leftEye, rightEye, image, singleEye }) => {
                             <View style={styles.accuracyWrapper}>
                                 <Text>
                                     <Text style={styles.label}>Accuracy:</Text>{' '}
-                                    {Math.floor(singleEye.confidence * 100)}%
+                                    {Math.round(singleEye.confidence * 100)}%
                                 </Text>
                                 <AccuracyBar value={singleEye.confidence} />
                             </View>
@@ -52,7 +52,7 @@ const Pdf = ({ leftEye, rightEye, image, singleEye }) => {
                             <View style={styles.accuracyWrapper}>
                                 <Text>
                                     <Text style={styles.label}>Accuracy:</Text>{' '}
-                                    {Math.floor(leftEye.confidence * 100)}%
+                                    {Math.round(leftEye.confidence * 100)}%
                                 </Text>
                                 <AccuracyBar value={leftEye.confidence} />
                             </View>
@@ -71,7 +71,7 @@ const Pdf = ({ leftEye, rightEye, image, singleEye }) => {
                             <View style={styles.accuracyWrapper}>
                                 <Text>
                                     <Text style={styles.label}>Accuracy:</Text>{' '}
-                                    {Math.floor(rightEye.confidence * 100)}%
+                                    {Math.round(rightEye.confidence * 100)}%
                                 </Text>
                                 <AccuracyBar value={rightEye.confidence} />
                             </View>
