@@ -28,7 +28,6 @@ const UploadAndCheck = () => {
         setLoading(true)
         try{
             const response = await axios.post(`${import.meta.env.VITE_ROBOFLOW_API_URL}?api_key=${import.meta.env.VITE_ROBOFLOW_API_KEY}`, formData)
-            console.log(response.data)
     
             //Displaying error message if no predictions are found
             if(response.data.predictions.length === 0){
