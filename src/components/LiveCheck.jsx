@@ -86,7 +86,7 @@ const LiveCheck = () => {
                 }
                 setLoading(false)
             }
-        }, 1000) // Every second
+        }, 300) // Every second
 
         return () => clearInterval(interval)
     }, [loading])
